@@ -1,0 +1,74 @@
+.boxes-cont {
+     display: grid;
+     justify-content: center;
+    grid-template-areas: "box1"
+                         "box2"
+                         "box3"
+                         "box4"
+                         "box5";
+                        
+    width: 90%;
+    height: 80vh;
+    gap: 2%;
+    margin: auto;
+    padding: 10px;
+   
+    }
+    .box1 {
+    background-color: purple;
+    grid-area: box1;
+    width: 100%;
+    border-radius: 5%;
+    }
+    .box2 {
+    background-color: grey;
+    grid-area: box2;
+    border-radius: 5%;
+    }
+    .box3 {
+    background-color: lightgray;
+    grid-area: box3;
+    border-radius: 5%;
+    }
+    .box4 {
+    background-color: lightgray;
+    grid-area: box4;
+    border-radius: 5%;
+    
+    }
+    .box5 {
+    background-color: darkblue;
+    
+    grid-area: box5;
+    border-radius: 5%;
+    
+    }
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .boxes-cont {
+        display: grid;
+        justify-content: center;
+       grid-template-areas: "box1 box1"
+                            "box2 box3"
+                            "box4 box3"
+                            "box5 box5" ;
+                           
+      
+       }
+      
+}
+    
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .boxes-cont {
+     display: grid;
+     justify-content: center;
+    grid-template-areas: "box1 box1 box2 box3"
+                         "box4  box5 box5 box3";
+                    
+   
+    }
+    
+
+}
