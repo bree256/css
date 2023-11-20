@@ -1,0 +1,22 @@
+
+body { 
+    justify-content: center;
+    width: 200px;
+    height: 400px;  
+}
+.box {
+    padding: 10px;
+    transition-property: background,transform;
+    transition-duration: 2s;
+    transition-delay: 2s;
+    background-color: pink;
+    border-radius: 6px;
+    border: 2px solid yellowgreen;
+}
+.box:hover {
+    background-color: purple;
+    transform: rotate(20deg);
+}
+p {
+    display: flex;
+}
