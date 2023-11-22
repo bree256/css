@@ -1,0 +1,38 @@
+body {
+
+    margin: 0;
+}
+.sky {
+    background-color: skyblue;
+    height: 220px;
+}
+.grass {
+    background-color: green;
+    height: 250px;
+}
+.road {
+    background-color: grey;
+    height: 300px;
+}
+.lines {
+    justify-content: space-between;
+    display: flex;
+    gap: 10px;
+    animation: move 3s linear 2s infinite both;
+
+}
+span {
+    padding: 10px;
+    background-color: white;
+    top: 200px;
+    margin-top: 150px;
+    
+}
+@keyframes move {
+    from { transform: translateX(0px);
+
+    }
+    to { transform: translateX(60px);
+ 
+    }
+}
