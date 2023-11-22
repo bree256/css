@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 50vh;
+}
+.button {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: limegreen;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    animation: slide 3s ease-in 1s ;
+    /* transition: transform; */
+}
+@keyframes slide 
+{
+    from {transform: rotate(-30deg) scale(0);
+        background-color: aliceblue;
+    
+    }
+    to {transform: rotate(60deg) scale(10);
+        background-color: black;
+    }
+}
